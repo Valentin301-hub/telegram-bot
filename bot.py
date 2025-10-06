@@ -3,9 +3,9 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 from pathlib import Path
 
-BOT_TOKEN = '8309972348:AAFkZHDaG-1_1Yc11in59hMa0yRifdNpujo'
-CHANNEL_USERNAME = '@bauman_bratstvo'
-CHANNEL_ID = -1002374836671
+BOT_TOKEN = os.environ['BOT_TOKEN']
+CHANNEL_USERNAME = os.environ['CHANNEL_USERNAME']
+CHANNEL_ID = int(os.environ['CHANNEL_ID'])
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
